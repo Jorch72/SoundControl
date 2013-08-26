@@ -49,7 +49,10 @@ class GuiSoundControl extends GuiScreen {
 				for(s <- SoundManager.allSounds)
 					SoundManager.soundConfig += (s -> set)
 			}
-			case 8 => mc.displayGuiScreen(null) // Done
+			case 8 => { // Done
+				mc.displayGuiScreen(null)
+				SoundManager.writeConfig
+			}
 			case _ =>
 		}
 	}

@@ -29,8 +29,8 @@ object SoundManager {
  		val obj = field.get(event.manager.soundPoolSounds)
  		
  		obj match {
- 			case map : java.util.Map[String, _] => {
- 				for(s : String <- map.keySet.toArray(Array[String]())) {
+ 			case map : java.util.Map[_, _] => {
+ 				for(s : String <- map.keySet.asInstanceOf[java.util.Set[String]].toArray(Array[String]())) {
  					allSounds :+= s
  					soundConfig += (s -> 1.0F)
  				}
