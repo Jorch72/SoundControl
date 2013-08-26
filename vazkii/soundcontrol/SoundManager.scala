@@ -7,11 +7,11 @@ import net.minecraft.nbt.CompressedStreamTools
 import net.minecraft.nbt.NBTBase
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.nbt.NBTTagFloat
+import net.minecraftforge.client.event.sound.PlaySoundEffectEvent
 import net.minecraftforge.client.event.sound.PlaySoundEvent
 import net.minecraftforge.client.event.sound.SoundLoadEvent
 import net.minecraftforge.event.ForgeSubscribe
 import net.minecraftforge.event.EventPriority
-import net.minecraftforge.client.event.sound.PlaySoundEffectEvent
 
 object SoundManager {
 

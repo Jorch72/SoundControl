@@ -1,12 +1,13 @@
 package vazkii.soundcontrol
 
 import java.util.EnumSet
+
 import org.lwjgl.input.Keyboard
+
 import cpw.mods.fml.client.registry.KeyBindingRegistry.KeyHandler
 import cpw.mods.fml.common.TickType
-import net.minecraft.client.settings.KeyBinding
 import net.minecraft.client.Minecraft
-import vazkii.lmm2.client.gui.GuiMain
+import net.minecraft.client.settings.KeyBinding
 
 class KeybindHandler(key : KeyBinding) extends KeyHandler(Array(key), Array(true)) {
 	
